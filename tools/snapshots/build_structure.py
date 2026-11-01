@@ -50,9 +50,46 @@ MIN_HITS_PATH = 3         # tracebacks are rarer than names, so a lower bar
 MIN_PRECISION = 0.6       # share of training issues with the signal that had the label
 MAX_RULES_PER_LABEL = 10
 
-IGNORE_KEYWORDS = set()   # names you never want as rules, e.g. {"DataFrame"}
-MANUAL_RULES = []         # rules you add by hand; they are checked and reported like the rest
-# e.g. [{"kind": "keyword", "match": "read_stata", "label": "IO Stata"}]
+IGNORE_KEYWORDS = set({"wrapper", "merge"})   # names you never want as rules, e.g. {"DataFrame"}
+# Rules you add by hand, based on pandas' own label descriptions (data/labels.json).
+# They are learned-checked like the rest: the report shows their earlier and later
+# precision, so remove any that turn out to mislead. Ones the script learns anyway are skipped.
+def _kw(label, *names):
+    return [{"kind": "keyword", "match": n, "label": label} for n in names]
+
+
+def _path(label, *paths):
+    return [{"kind": "path", "match": p, "label": label} for p in paths]
+
+
+MANUAL_RULES = (
+    # Strings: "String extension data type and string data"
+    _kw("Strings", "StringDtype", "StringArray")
+    + _path("Strings")
+    # Arrow: "pyarrow functionality"
+    + _kw("Arrow", "pyarrow", "ArrowDtype", "ArrowExtensionArray")
+    + _path("Arrow", "pandas/core/arrays/arrow/")
+    # IO XML: "read_xml, to_xml"
+    + _kw("IO XML", "read_xml", "to_xml")
+    + _path("IO XML", "pandas/io/xml.py", "pandas/io/formats/xml.py")
+    # Reshaping: "Concat, Merge/Join, Stack/Unstack, Explode" (merge is in IGNORE_KEYWORDS:
+    # it was too common to be a reliable signal)
+    + _kw("Reshaping", "concat", "stack", "unstack", "explode")
+    + _path("Reshaping", "pandas/core/reshape/")
+    # Visualization: "plotting"
+    + _kw("Visualization", "plot", "plotting", "boxplot", "hist")
+    + _path("Visualization", "pandas/plotting/")
+    # IO CSV: "read_csv, to_csv"
+    + _kw("IO CSV", "read_csv", "to_csv")
+    + _path("IO CSV")
+    # expressions: "pd.eval, query, pd.col" (pd.col is left to the agent via the label
+    # glossary: the bare name "col" is too common in user code to be a useful rule)
+    + _kw("expressions", "eval", "query")
+    + _path("expressions", "pandas/core/computation/")
+    # IO Parquet: "parquet, feather"
+    + _kw("IO Parquet", "read_parquet", "to_parquet", "read_feather", "to_feather")
+    + _path("IO Parquet", "pandas/io/parquet.py", "pandas/io/feather_format.py")
+)
 
 NOT_TRIAGED = "Needs Triage"
 # The agent only handles bug reports, so rules are learned and checked on the same kind of
@@ -388,6 +425,8 @@ def main():
     commit = run("git", "-C", str(PANDAS), "rev-parse", "HEAD").strip()
     print(f"Reading pandas {commit[:10]} at {PANDAS.resolve()} ...")
     vocabulary = pandas_vocabulary(PANDAS)
+    # manual keywords such as "pyarrow" are not pandas def names; add them so they are counted
+    vocabulary |= {r["match"] for r in MANUAL_RULES if r["kind"] == "keyword"} - IGNORE_KEYWORDS
     print(f"{len(vocabulary)} pandas names in the vocabulary")
 
     rules, near_misses = learn(train, vocabulary, PANDAS)

@@ -25,7 +25,10 @@
   "min_hits_path": 3,
   "min_precision": 0.6,
   "max_rules_per_label": 10,
-  "ignored_keywords": []
+  "ignored_keywords": [
+   "merge",
+   "wrapper"
+  ]
  },
  "matching": {
   "identifier_regex": "[A-Za-z_][A-Za-z0-9_]*",
@@ -35,18 +38,31 @@
  },
  "vocabulary": [
   "ArrowDtype",
+  "ArrowExtensionArray",
+  "StringArray",
   "StringDtype",
+  "boxplot",
+  "concat",
   "convert_dtypes",
   "dtype_backend",
+  "eval",
+  "explode",
   "header",
-  "merge",
+  "hist",
   "plot",
+  "plotting",
+  "pyarrow",
+  "query",
   "read_csv",
+  "read_feather",
   "read_parquet",
+  "read_xml",
+  "stack",
   "to_csv",
+  "to_feather",
   "to_parquet",
-  "unstack",
-  "wrapper"
+  "to_xml",
+  "unstack"
  ],
  "labels": {
   "Strings": {
@@ -56,23 +72,23 @@
   },
   "Arrow": {
    "check_issues": 62,
-   "found_by_rules": 23,
-   "recall": 0.37
+   "found_by_rules": 57,
+   "recall": 0.92
   },
   "IO XML": {
    "check_issues": 2,
-   "found_by_rules": 0,
-   "recall": 0.0
+   "found_by_rules": 2,
+   "recall": 1.0
   },
   "Reshaping": {
    "check_issues": 12,
-   "found_by_rules": 7,
-   "recall": 0.58
+   "found_by_rules": 6,
+   "recall": 0.5
   },
   "Visualization": {
    "check_issues": 7,
-   "found_by_rules": 5,
-   "recall": 0.71
+   "found_by_rules": 7,
+   "recall": 1.0
   },
   "IO CSV": {
    "check_issues": 30,
@@ -81,13 +97,13 @@
   },
   "expressions": {
    "check_issues": 10,
-   "found_by_rules": 0,
-   "recall": 0.0
+   "found_by_rules": 6,
+   "recall": 0.6
   },
   "IO Parquet": {
    "check_issues": 5,
-   "found_by_rules": 3,
-   "recall": 0.6
+   "found_by_rules": 4,
+   "recall": 0.8
   }
  },
  "rules": [
@@ -153,22 +169,6 @@
     "matches": 12,
     "correct": 10,
     "precision": 0.83
-   }
-  },
-  {
-   "kind": "keyword",
-   "match": "wrapper",
-   "label": "Arrow",
-   "source": "learned",
-   "train": {
-    "hits": 5,
-    "support": 5,
-    "precision": 1.0
-   },
-   "check": {
-    "matches": 3,
-    "correct": 1,
-    "precision": 0.33
    }
   },
   {
@@ -252,6 +252,22 @@
    }
   },
   {
+   "kind": "keyword",
+   "match": "pyarrow",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 49,
+    "support": 73,
+    "precision": 0.67
+   },
+   "check": {
+    "matches": 80,
+    "correct": 56,
+    "precision": 0.7
+   }
+  },
+  {
    "kind": "path",
    "match": "pandas/core/reshape/",
    "label": "Reshaping",
@@ -281,22 +297,6 @@
     "matches": 4,
     "correct": 3,
     "precision": 0.75
-   }
-  },
-  {
-   "kind": "keyword",
-   "match": "merge",
-   "label": "Reshaping",
-   "source": "learned",
-   "train": {
-    "hits": 7,
-    "support": 10,
-    "precision": 0.7
-   },
-   "check": {
-    "matches": 6,
-    "correct": 2,
-    "precision": 0.33
    }
   },
   {
@@ -425,6 +425,326 @@
     "matches": 4,
     "correct": 3,
     "precision": 0.75
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "StringArray",
+   "label": "Strings",
+   "source": "manual",
+   "train": {
+    "hits": 4,
+    "support": 4,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 3,
+    "correct": 0,
+    "precision": 0.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "ArrowExtensionArray",
+   "label": "Arrow",
+   "source": "manual",
+   "train": {
+    "hits": 3,
+    "support": 5,
+    "precision": 0.6
+   },
+   "check": {
+    "matches": 7,
+    "correct": 7,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/arrays/arrow/",
+   "label": "Arrow",
+   "source": "manual",
+   "train": {
+    "hits": 3,
+    "support": 6,
+    "precision": 0.5
+   },
+   "check": {
+    "matches": 8,
+    "correct": 8,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "read_xml",
+   "label": "IO XML",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "to_xml",
+   "label": "IO XML",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/io/xml.py",
+   "label": "IO XML",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 0,
+    "correct": 0,
+    "precision": null
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/io/formats/xml.py",
+   "label": "IO XML",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "concat",
+   "label": "Reshaping",
+   "source": "manual",
+   "train": {
+    "hits": 5,
+    "support": 12,
+    "precision": 0.42
+   },
+   "check": {
+    "matches": 13,
+    "correct": 3,
+    "precision": 0.23
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "stack",
+   "label": "Reshaping",
+   "source": "manual",
+   "train": {
+    "hits": 2,
+    "support": 3,
+    "precision": 0.67
+   },
+   "check": {
+    "matches": 2,
+    "correct": 0,
+    "precision": 0.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "explode",
+   "label": "Reshaping",
+   "source": "manual",
+   "train": {
+    "hits": 1,
+    "support": 1,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 1,
+    "correct": 0,
+    "precision": 0.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "plotting",
+   "label": "Visualization",
+   "source": "manual",
+   "train": {
+    "hits": 3,
+    "support": 3,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 2,
+    "correct": 1,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "boxplot",
+   "label": "Visualization",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 0,
+    "correct": 0,
+    "precision": null
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "hist",
+   "label": "Visualization",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/plotting/",
+   "label": "Visualization",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 4,
+    "correct": 4,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "eval",
+   "label": "expressions",
+   "source": "manual",
+   "train": {
+    "hits": 1,
+    "support": 2,
+    "precision": 0.5
+   },
+   "check": {
+    "matches": 5,
+    "correct": 3,
+    "precision": 0.6
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "query",
+   "label": "expressions",
+   "source": "manual",
+   "train": {
+    "hits": 1,
+    "support": 5,
+    "precision": 0.2
+   },
+   "check": {
+    "matches": 6,
+    "correct": 3,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/computation/",
+   "label": "expressions",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 3,
+    "correct": 1,
+    "precision": 0.33
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "read_feather",
+   "label": "IO Parquet",
+   "source": "manual",
+   "train": {
+    "hits": 1,
+    "support": 2,
+    "precision": 0.5
+   },
+   "check": {
+    "matches": 2,
+    "correct": 1,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "to_feather",
+   "label": "IO Parquet",
+   "source": "manual",
+   "train": {
+    "hits": 1,
+    "support": 1,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/io/feather_format.py",
+   "label": "IO Parquet",
+   "source": "manual",
+   "train": {
+    "hits": 0,
+    "support": 0,
+    "precision": null
+   },
+   "check": {
+    "matches": 0,
+    "correct": 0,
+    "precision": null
    }
   }
  ]
