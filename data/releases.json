@@ -1,0 +1,1946 @@
+{
+ "pandas": [
+  {
+   "version": "0.1",
+   "released": "2009-12-25T23:58:31.560462Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.2",
+   "released": "2010-05-18T15:14:26.615980Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.3.0",
+   "released": "2011-02-20T02:00:14.775348Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.0",
+   "released": "2011-09-12T22:35:52.594175Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.1",
+   "released": "2011-09-26T03:55:34.172315Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.2",
+   "released": "2011-10-03T06:48:14.509510Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.3",
+   "released": "2011-10-09T23:59:30.380190Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.5.0",
+   "released": "2011-10-25T04:35:01.745719Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.6.0",
+   "released": "2011-11-26T04:23:05.278573Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.6.1",
+   "released": "2011-12-14T00:08:35.560100Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.0",
+   "released": "2012-02-09T23:30:09.369893Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.1",
+   "released": "2012-02-29T23:06:17.193098Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.2",
+   "released": "2012-03-16T21:39:20.617641Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.3",
+   "released": "2012-04-12T19:36:20.081721Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.8.0",
+   "released": "2012-06-29T18:21:06.065832Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.8.1",
+   "released": "2012-07-22T21:48:25.958262Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.9.0",
+   "released": "2012-10-08T00:17:48.512671Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.9.1",
+   "released": "2012-11-15T00:41:47.735678Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.10.0",
+   "released": "2012-12-17T16:52:02.650080Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.10.1",
+   "released": "2013-01-22T05:22:04.365905Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.11.0",
+   "released": "2013-04-23T01:05:34.234288Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.12.0",
+   "released": "2013-07-24T20:22:22.133069Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.13.0",
+   "released": "2014-01-16T23:10:24.694489Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.13.1",
+   "released": "2014-02-09T22:20:44.855078Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.14.0",
+   "released": "2014-05-30T12:40:06.630495Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.14.1",
+   "released": "2014-07-10T23:58:38.034360Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.15.0",
+   "released": "2014-10-19T00:57:13.365526Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.15.1",
+   "released": "2014-11-08T13:35:19.324701Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.15.2",
+   "released": "2014-12-11T16:51:54.467833Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.16.0",
+   "released": "2015-03-22T13:45:00.189836Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.16.1",
+   "released": "2015-05-11T01:20:43.862282Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.16.2",
+   "released": "2015-06-13T14:13:02.574277Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.17.0",
+   "released": "2015-10-09T14:17:16.679835Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.17.1",
+   "released": "2015-11-20T18:59:34.124851Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.18.0",
+   "released": "2016-03-12T15:43:00.842643Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.18.1",
+   "released": "2016-05-05T00:24:25.372953Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.19.0",
+   "released": "2016-10-02T15:47:13.474480Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.19.1",
+   "released": "2016-11-03T16:32:09.315565Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.19.2",
+   "released": "2016-12-24T17:02:06.649164Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.20.0",
+   "released": "2017-05-05T02:46:47.534114Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.20.1",
+   "released": "2017-05-05T17:32:13.270483Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.20.2",
+   "released": "2017-06-05T12:24:15.340733Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.20.3",
+   "released": "2017-07-07T21:39:55.596866Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.21.0",
+   "released": "2017-10-28T18:44:46.975876Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.21.1",
+   "released": "2017-12-13T04:16:33.445467Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.22.0",
+   "released": "2017-12-31T12:37:46.046069Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.23.0",
+   "released": "2018-05-16T02:11:07.423746Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.23.1",
+   "released": "2018-06-13T02:14:42.925889Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.23.2",
+   "released": "2018-07-06T12:23:36.526866Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.23.3",
+   "released": "2018-07-07T20:26:01.178473Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.23.4",
+   "released": "2018-08-04T18:47:17.397244Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.24.0",
+   "released": "2019-01-25T21:13:23.556479Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.24.1",
+   "released": "2019-02-04T03:08:46.643228Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.24.2",
+   "released": "2019-03-14T10:10:10.916560Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.25.0",
+   "released": "2019-07-19T00:08:20.086397Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.25.1",
+   "released": "2019-08-22T19:17:16.523364Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.25.2",
+   "released": "2019-10-19T02:03:22.870530Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.25.3",
+   "released": "2019-11-01T14:45:06.992759Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.0",
+   "released": "2020-01-30T11:57:40.012791Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.1",
+   "released": "2020-02-05T20:50:35.384983Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.2",
+   "released": "2020-03-15T13:58:47.529941Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.3",
+   "released": "2020-03-18T17:08:00.461350Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.4",
+   "released": "2020-05-29T11:49:40.716225Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.5",
+   "released": "2020-06-18T11:30:46.426932Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.0",
+   "released": "2020-07-28T18:01:26.030537Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.1",
+   "released": "2020-08-20T21:12:02.366842Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.2",
+   "released": "2020-09-08T19:49:08.978777Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.3",
+   "released": "2020-10-05T19:45:44.271739Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.4",
+   "released": "2020-10-30T18:45:41.385496Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.1.5",
+   "released": "2020-12-07T15:07:55.239292Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.0",
+   "released": "2020-12-26T16:58:54.157968Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.1",
+   "released": "2021-01-20T13:34:07.508742Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.2",
+   "released": "2021-02-09T13:20:50.361924Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.3",
+   "released": "2021-03-02T12:05:36.600299Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.4",
+   "released": "2021-04-12T18:43:31.918766Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.2.5",
+   "released": "2021-06-22T13:41:54.627572Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.0",
+   "released": "2021-07-02T11:59:11.890793Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.1",
+   "released": "2021-07-25T12:22:25.798191Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.2",
+   "released": "2021-08-15T16:14:47.613433Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.3",
+   "released": "2021-09-12T13:20:46.179253Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.4",
+   "released": "2021-10-17T16:42:57.080893Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.3.5",
+   "released": "2021-12-12T14:30:49.858085Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.0",
+   "released": "2022-01-22T14:47:00.594826Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.1",
+   "released": "2022-02-12T11:21:13.980688Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.2",
+   "released": "2022-04-02T10:32:27.198227Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.3",
+   "released": "2022-06-23T13:30:09.536882Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.4",
+   "released": "2022-08-31T12:18:07.039749Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.0",
+   "released": "2022-09-19T15:53:13.348635Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.1",
+   "released": "2022-10-19T06:28:51.363097Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.2",
+   "released": "2022-11-23T05:49:21.021142Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.3",
+   "released": "2023-01-19T08:29:07.301403Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.0",
+   "released": "2023-04-03T14:10:47.709938Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.1",
+   "released": "2023-04-24T10:17:37.973468Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.2",
+   "released": "2023-05-29T06:42:26.436954Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.3",
+   "released": "2023-06-28T23:15:57.001717Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.0",
+   "released": "2023-08-30T13:13:26.120522Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.1",
+   "released": "2023-09-20T21:03:54.378339Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.2",
+   "released": "2023-10-26T19:22:55.532165Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.3",
+   "released": "2023-11-10T19:13:33.959150Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.4",
+   "released": "2023-12-08T15:37:00.781879Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.0",
+   "released": "2024-01-20T02:10:54.053228Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.1",
+   "released": "2024-02-23T15:30:19.248570Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.2",
+   "released": "2024-04-10T19:44:10.360057Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.3",
+   "released": "2024-09-20T13:08:42.347501Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.0",
+   "released": "2025-06-05T03:25:48.648538Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.1",
+   "released": "2025-07-07T19:18:12.619681Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.2",
+   "released": "2025-08-21T10:26:36.236532Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.3",
+   "released": "2025-09-29T23:16:53.287821Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.0rc0",
+   "released": "2025-12-03T17:37:34.950792Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "3.0.0rc1",
+   "released": "2025-12-19T22:00:20.331257Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "3.0.0rc2",
+   "released": "2026-01-14T22:41:56.473972Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "3.0.0",
+   "released": "2026-01-21T15:50:15.775412Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.1",
+   "released": "2026-02-17T22:18:16.133796Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.2",
+   "released": "2026-03-31T06:46:08.290259Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.3",
+   "released": "2026-05-11T18:52:11.558737Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.4",
+   "released": "2026-06-28T15:29:45.196849Z",
+   "prerelease": false,
+   "yanked": true
+  },
+  {
+   "version": "3.0.5",
+   "released": "2026-07-22T22:17:48.274862Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.6",
+   "released": "2026-09-17T23:20:20.960376Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.1.0rc0",
+   "released": "2026-09-30T13:55:10.637378Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "3.1.0",
+   "released": "2026-10-22T11:54:48.330970Z",
+   "prerelease": false,
+   "yanked": false
+  }
+ ],
+ "numpy": [
+  {
+   "version": "1.3.0",
+   "released": "2009-04-06T06:19:25.098717Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.4.1",
+   "released": "2010-04-24T16:30:04.598432Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.0",
+   "released": "2010-09-15T14:44:53.723687Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.5.1",
+   "released": "2010-11-18T14:16:58.801332Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.6.0",
+   "released": "2011-05-14T12:01:38.583185Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.6.1",
+   "released": "2011-07-24T17:59:40.977602Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.6.2",
+   "released": "2012-05-20T11:37:23.265916Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.7.0",
+   "released": "2013-02-12T05:09:27.275453Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.7.1",
+   "released": "2013-04-07T08:03:54.880648Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.8.0",
+   "released": "2013-10-30T22:34:42.018079Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.7.2",
+   "released": "2013-12-31T14:48:32.487228Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.8.1",
+   "released": "2014-03-25T23:19:20.448156Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.8.2",
+   "released": "2014-08-09T12:19:55.548631Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.9.0",
+   "released": "2014-09-07T09:55:54.185020Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.9.1",
+   "released": "2014-11-02T13:20:14.280013Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.9.2",
+   "released": "2015-03-01T20:07:54.195939Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.9.3",
+   "released": "2015-09-21T23:41:52.748075Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.0.post2",
+   "released": "2015-10-07T19:45:54.972584Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.1",
+   "released": "2015-10-12T16:10:30.947199Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.2",
+   "released": "2015-12-14T20:43:20.783974Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.4",
+   "released": "2016-01-07T02:41:56.174644Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.11.0",
+   "released": "2016-03-27T20:25:47.051006Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.3",
+   "released": "2016-04-20T03:58:58.733468Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.10.0",
+   "released": "2016-04-20T04:13:06.946151Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.11.1",
+   "released": "2016-06-26T13:55:46.843476Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.11.2",
+   "released": "2016-10-04T00:45:34.536361Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.11.3",
+   "released": "2016-12-19T00:32:04.109494Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.12.0",
+   "released": "2017-01-15T22:59:45.487262Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.12.1",
+   "released": "2017-03-18T16:38:00.216686Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.13.0",
+   "released": "2017-06-07T18:25:44.233703Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.13.1",
+   "released": "2017-07-07T01:00:08.642957Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.13.3",
+   "released": "2017-09-29T22:36:56.687439Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.0",
+   "released": "2018-01-06T23:35:53.601039Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.1",
+   "released": "2018-02-21T00:18:25.841764Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.2",
+   "released": "2018-03-12T17:49:21.097326Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.3",
+   "released": "2018-04-28T15:56:12.867128Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.4",
+   "released": "2018-06-06T17:00:59.759569Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.5",
+   "released": "2018-06-12T22:28:32.345187Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.15.0",
+   "released": "2018-07-23T16:03:25.445499Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.15.1",
+   "released": "2018-08-21T19:28:58.028359Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.15.2",
+   "released": "2018-09-23T12:12:14.166931Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.14.6",
+   "released": "2018-09-23T16:50:37.374358Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.15.3",
+   "released": "2018-10-22T17:10:58.473781Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.15.4",
+   "released": "2018-11-04T16:20:32.088397Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.0",
+   "released": "2019-01-14T02:39:58.065461Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.1",
+   "released": "2019-01-31T23:13:15.370526Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.2",
+   "released": "2019-02-26T19:10:02.484594Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.3",
+   "released": "2019-04-22T01:23:42.415945Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.4",
+   "released": "2019-05-28T18:53:17.368073Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.0",
+   "released": "2019-07-26T18:16:22.344976Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.1",
+   "released": "2019-08-27T00:20:20.120947Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.5",
+   "released": "2019-08-28T01:11:32.963476Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.2",
+   "released": "2019-09-07T00:00:13.016768Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.3",
+   "released": "2019-10-17T14:39:53.130305Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.4",
+   "released": "2019-11-11T01:49:18.515066Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.0",
+   "released": "2019-12-22T15:32:32.898512Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.16.6",
+   "released": "2019-12-29T22:23:23.324959Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.17.5",
+   "released": "2020-01-01T16:56:30.998785Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.1",
+   "released": "2020-01-06T21:53:39.363138Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.2",
+   "released": "2020-03-17T16:36:47.804465Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.3",
+   "released": "2020-04-19T19:56:51.761814Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.4",
+   "released": "2020-05-03T15:18:15.269722Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.18.5",
+   "released": "2020-06-04T00:10:51.562807Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.0",
+   "released": "2020-06-20T20:14:54.337985Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.1",
+   "released": "2020-07-21T20:54:49.738073Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.2",
+   "released": "2020-09-10T17:48:12.682501Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.3",
+   "released": "2020-10-29T01:08:10.847529Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.4",
+   "released": "2020-11-02T15:46:22.539624Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.19.5",
+   "released": "2021-01-05T17:19:38.152665Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.20.0",
+   "released": "2021-01-30T19:35:22.261149Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.20.1",
+   "released": "2021-02-07T20:27:20.715020Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.20.2",
+   "released": "2021-03-27T22:16:26.599131Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.20.3",
+   "released": "2021-05-10T15:17:40.190393Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.0",
+   "released": "2021-06-22T13:39:59.699188Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.1",
+   "released": "2021-07-18T19:37:41.147001Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.2",
+   "released": "2021-08-15T20:07:03.361113Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.3",
+   "released": "2021-10-20T20:17:59.602416Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.4",
+   "released": "2021-11-05T01:20:44.695026Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.5",
+   "released": "2021-12-19T23:58:44.615292Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.22.0",
+   "released": "2021-12-31T20:32:18.055882Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.22.1",
+   "released": "2022-01-14T18:52:16.369571Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.22.2",
+   "released": "2022-02-04T00:30:48.962221Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.22.3",
+   "released": "2022-03-07T22:39:39.822214Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.21.6",
+   "released": "2022-04-12T14:48:15.695596Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.22.4",
+   "released": "2022-05-20T20:50:53.578694Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.0",
+   "released": "2022-06-22T22:13:34.426695Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.1",
+   "released": "2022-07-09T01:07:24.593590Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.2",
+   "released": "2022-08-14T00:14:09.173414Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.3",
+   "released": "2022-09-09T17:48:27.159123Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.4",
+   "released": "2022-10-12T14:42:05.424357Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.23.5",
+   "released": "2022-11-20T01:21:22.661546Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.24.0",
+   "released": "2022-12-18T17:53:12.273343Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.24.1",
+   "released": "2022-12-26T13:37:55.240563Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.24.2",
+   "released": "2023-02-05T19:45:29.320338Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.24.3",
+   "released": "2023-04-22T21:29:36.764975Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.25.0",
+   "released": "2023-06-17T14:38:18.191717Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.24.4",
+   "released": "2023-06-26T13:22:33.184535Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.25.1",
+   "released": "2023-07-08T21:38:33.449846Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.25.2",
+   "released": "2023-07-31T14:50:49.761194Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.26.0",
+   "released": "2023-09-16T19:58:18.591674Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.26.1",
+   "released": "2023-10-14T19:39:25.820070Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.26.2",
+   "released": "2023-11-12T22:51:49.818678Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.26.3",
+   "released": "2024-01-02T22:20:37.359401Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.26.4",
+   "released": "2024-02-05T23:48:01.194769Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.0",
+   "released": "2024-06-16T13:06:46.930043Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.1",
+   "released": "2024-07-21T13:29:55.558361Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.0",
+   "released": "2024-08-18T21:39:07.105191Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.2",
+   "released": "2024-08-26T20:04:14.625862Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.1",
+   "released": "2024-09-03T15:01:06.905664Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.2",
+   "released": "2024-10-05T18:28:18.443739Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.1.3",
+   "released": "2024-11-02T17:30:37.354009Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.0",
+   "released": "2024-12-08T15:20:47.292582Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.1",
+   "released": "2024-12-21T20:29:57.832822Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.2",
+   "released": "2025-01-18T22:56:28.939363Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.3",
+   "released": "2025-02-13T16:41:34.557908Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.4",
+   "released": "2025-03-16T18:02:13.017640Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.5",
+   "released": "2025-04-19T22:31:01.142106Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.2.6",
+   "released": "2025-05-17T21:27:58.555672Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.0",
+   "released": "2025-06-07T14:36:52.067369Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.1",
+   "released": "2025-06-21T11:47:47.570483Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.2",
+   "released": "2025-07-24T20:24:35.214147Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.3",
+   "released": "2025-09-09T15:56:02.094369Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.4",
+   "released": "2025-10-15T16:15:19.012032Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.3.5",
+   "released": "2025-11-16T22:49:19.336288Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.0rc1",
+   "released": "2025-12-03T08:06:57.480125Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "2.4.0",
+   "released": "2025-12-20T16:15:43.434135Z",
+   "prerelease": false,
+   "yanked": true
+  },
+  {
+   "version": "2.4.1",
+   "released": "2026-01-10T06:42:14.615963Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.2",
+   "released": "2026-01-31T23:10:25.623288Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.3",
+   "released": "2026-03-09T07:55:57.774728Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.4",
+   "released": "2026-03-29T13:18:15.438035Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.5",
+   "released": "2026-05-15T20:22:23.036152Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.4.6",
+   "released": "2026-05-18T23:33:13.503322Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.5.0rc1",
+   "released": "2026-06-02T12:56:22.836953Z",
+   "prerelease": true,
+   "yanked": false
+  },
+  {
+   "version": "2.5.0",
+   "released": "2026-06-21T20:56:16.657410Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.5.1",
+   "released": "2026-07-04T17:06:12.423099Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.5.2",
+   "released": "2026-08-09T13:44:51.702331Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.5.3",
+   "released": "2026-09-06T16:24:29.244371Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.5.4",
+   "released": "2026-10-10T20:02:40.843976Z",
+   "prerelease": false,
+   "yanked": false
+  }
+ ],
+ "pyarrow": [
+  {
+   "version": "0.2.0",
+   "released": "2017-03-16T22:17:57.360645Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.3.0",
+   "released": "2017-05-08T04:34:24.074212Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.0",
+   "released": "2017-05-23T00:51:40.353646Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.4.1",
+   "released": "2017-06-13T16:19:10.417702Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.5.0",
+   "released": "2017-07-29T15:08:26.955015Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.5.0.post2",
+   "released": "2017-08-02T22:06:59.539735Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.6.0",
+   "released": "2017-08-16T21:55:54.210992Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.0",
+   "released": "2017-09-18T18:32:37.219741Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.7.1",
+   "released": "2017-10-03T11:39:55.429571Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.8.0",
+   "released": "2017-12-17T21:16:26.903739Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.9.0",
+   "released": "2018-03-25T03:50:55.271582Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.9.0.post1",
+   "released": "2018-04-06T14:29:42.214863Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.10.0",
+   "released": "2018-08-06T21:13:02.853572Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.11.0",
+   "released": "2018-10-08T13:59:20.199416Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.11.1",
+   "released": "2018-10-24T15:13:12.670537Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.12.0",
+   "released": "2019-01-20T21:22:32.840891Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.12.1",
+   "released": "2019-02-25T15:12:19.840480Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.13.0",
+   "released": "2019-03-31T22:11:06.283192Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.14.0",
+   "released": "2019-07-04T07:02:46.882917Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.14.1",
+   "released": "2019-07-22T20:08:05.477979Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.15.0",
+   "released": "2019-10-05T12:21:00.098789Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.15.1",
+   "released": "2019-11-01T14:52:42.458779Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.16.0",
+   "released": "2020-02-07T08:11:42.604429Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.17.0",
+   "released": "2020-04-20T20:49:14.805916Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "0.17.1",
+   "released": "2020-05-18T20:02:51.003674Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.0",
+   "released": "2020-07-24T13:29:07.775110Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "1.0.1",
+   "released": "2020-08-21T13:57:02.285597Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "2.0.0",
+   "released": "2020-10-19T21:15:12.295741Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "3.0.0",
+   "released": "2021-01-26T01:05:45.312856Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "4.0.0",
+   "released": "2021-04-26T21:13:42.346879Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "4.0.1",
+   "released": "2021-05-30T17:16:04.969841Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "5.0.0",
+   "released": "2021-07-28T18:21:54.095622Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "6.0.0",
+   "released": "2021-10-26T15:00:11.753328Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "6.0.1",
+   "released": "2021-11-18T03:54:39.872147Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "7.0.0",
+   "released": "2022-02-03T19:25:09.844977Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "8.0.0",
+   "released": "2022-05-06T21:32:25.549936Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "9.0.0",
+   "released": "2022-08-03T10:45:55.423690Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "10.0.0",
+   "released": "2022-10-27T18:30:33.525591Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "10.0.1",
+   "released": "2022-11-22T22:14:44.062301Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "11.0.0",
+   "released": "2023-01-27T14:41:34.137216Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "12.0.0",
+   "released": "2023-05-02T09:43:01.558809Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "12.0.1",
+   "released": "2023-06-13T11:25:47.103440Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "13.0.0",
+   "released": "2023-08-23T13:48:17.345457Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "14.0.0",
+   "released": "2023-11-01T15:26:41.488749Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "14.0.1",
+   "released": "2023-11-08T17:00:41.896025Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "14.0.2",
+   "released": "2023-12-18T15:39:54.353237Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "15.0.0",
+   "released": "2024-01-21T14:58:49.201359Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "15.0.1",
+   "released": "2024-03-07T17:51:21.228835Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "15.0.2",
+   "released": "2024-03-18T16:53:30.164982Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "16.0.0",
+   "released": "2024-04-20T21:43:53.940513Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "16.1.0",
+   "released": "2024-05-14T13:37:15.029579Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "17.0.0",
+   "released": "2024-07-16T10:29:13.082939Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "18.0.0",
+   "released": "2024-10-28T10:10:49.084280Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "18.1.0",
+   "released": "2024-11-26T01:58:27.030586Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "19.0.0",
+   "released": "2025-01-16T04:19:25.745739Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "19.0.1",
+   "released": "2025-02-18T18:51:37.575723Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "20.0.0",
+   "released": "2025-04-27T12:27:27.890951Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "21.0.0",
+   "released": "2025-07-18T00:54:34.755518Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "22.0.0",
+   "released": "2025-10-24T10:03:31.210113Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "23.0.0",
+   "released": "2026-01-18T16:13:34.332005Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "23.0.1",
+   "released": "2026-02-16T10:08:08.654161Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "24.0.0",
+   "released": "2026-04-21T08:51:46.845232Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "25.0.0",
+   "released": "2026-07-10T08:25:23.153928Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "25.0.1",
+   "released": "2026-08-10T12:36:33.857237Z",
+   "prerelease": false,
+   "yanked": false
+  },
+  {
+   "version": "26.0.0",
+   "released": "2026-10-09T08:13:28.874876Z",
+   "prerelease": false,
+   "yanked": false
+  }
+ ]
+}

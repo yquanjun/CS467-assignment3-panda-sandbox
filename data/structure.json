@@ -1,0 +1,380 @@
+{
+ "pandas_commit": "aac259de677878b6328f6272d5537a3922aa0735",
+ "corpus_window": [
+  "2025-05-01",
+  "2026-10-31"
+ ],
+ "cutoff": "2025-12-05T01:23:41Z",
+ "test_cases_left_out": [
+  63269,
+  63271,
+  63277,
+  63757,
+  64253,
+  64298,
+  65834,
+  67726,
+  70748,
+  70991,
+  71275
+ ],
+ "method": {
+  "learned_from": "452 triaged corpus issues created before the cutoff",
+  "checked_on": "631 triaged corpus issues created on or after the cutoff",
+  "min_hits_keyword": 5,
+  "min_hits_path": 3,
+  "min_precision": 0.6,
+  "max_rules_per_label": 10,
+  "ignored_keywords": []
+ },
+ "matching": {
+  "identifier_regex": "[A-Za-z_][A-Za-z0-9_]*",
+  "path_regex": "pandas[\\\\/]+(?:[\\w.-]+[\\\\/]+)*[\\w.-]+\\.(?:py|pyx|pyi)",
+  "keyword_rule": "matches when the name is one of the identifiers found in the title or body, after removing text that matches path_regex",
+  "path_rule": "matches when a pandas path found in the body (runs of / or \\ turned into one /, text before the last 'pandas/' removed) equals the rule, or starts with it when the rule is a folder ending in /"
+ },
+ "vocabulary": [
+  "ArrowDtype",
+  "StringDtype",
+  "convert_dtypes",
+  "dtype_backend",
+  "header",
+  "merge",
+  "read_csv",
+  "read_parquet",
+  "to_csv",
+  "wrapper"
+ ],
+ "labels": {
+  "Strings": {
+   "check_issues": 48,
+   "found_by_rules": 13,
+   "recall": 0.27
+  },
+  "Arrow": {
+   "check_issues": 65,
+   "found_by_rules": 23,
+   "recall": 0.35
+  },
+  "IO XML": {
+   "check_issues": 2,
+   "found_by_rules": 0,
+   "recall": 0.0
+  },
+  "Reshaping": {
+   "check_issues": 17,
+   "found_by_rules": 5,
+   "recall": 0.29
+  },
+  "Visualization": {
+   "check_issues": 8,
+   "found_by_rules": 0,
+   "recall": 0.0
+  },
+  "IO CSV": {
+   "check_issues": 33,
+   "found_by_rules": 31,
+   "recall": 0.94
+  },
+  "expressions": {
+   "check_issues": 16,
+   "found_by_rules": 0,
+   "recall": 0.0
+  },
+  "IO Parquet": {
+   "check_issues": 5,
+   "found_by_rules": 3,
+   "recall": 0.6
+  }
+ },
+ "rules": [
+  {
+   "kind": "path",
+   "match": "pandas/core/strings/",
+   "label": "Strings",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 6,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 3,
+    "correct": 2,
+    "precision": 0.67
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/arrays/_arrow_string_mixins.py",
+   "label": "Strings",
+   "source": "learned",
+   "train": {
+    "hits": 3,
+    "support": 3,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/base.py",
+   "label": "Strings",
+   "source": "learned",
+   "train": {
+    "hits": 3,
+    "support": 4,
+    "precision": 0.75
+   },
+   "check": {
+    "matches": 2,
+    "correct": 1,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "StringDtype",
+   "label": "Strings",
+   "source": "learned",
+   "train": {
+    "hits": 7,
+    "support": 10,
+    "precision": 0.7
+   },
+   "check": {
+    "matches": 13,
+    "correct": 10,
+    "precision": 0.77
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "wrapper",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 5,
+    "support": 5,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 4,
+    "correct": 1,
+    "precision": 0.25
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/arrays/_arrow_string_mixins.py",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 3,
+    "support": 3,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/strings/",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 5,
+    "support": 6,
+    "precision": 0.83
+   },
+   "check": {
+    "matches": 3,
+    "correct": 2,
+    "precision": 0.67
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "ArrowDtype",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 10,
+    "support": 14,
+    "precision": 0.71
+   },
+   "check": {
+    "matches": 13,
+    "correct": 10,
+    "precision": 0.77
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "convert_dtypes",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 5,
+    "support": 7,
+    "precision": 0.71
+   },
+   "check": {
+    "matches": 12,
+    "correct": 6,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "dtype_backend",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 10,
+    "precision": 0.6
+   },
+   "check": {
+    "matches": 17,
+    "correct": 10,
+    "precision": 0.59
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "merge",
+   "label": "Reshaping",
+   "source": "learned",
+   "train": {
+    "hits": 8,
+    "support": 9,
+    "precision": 0.89
+   },
+   "check": {
+    "matches": 9,
+    "correct": 3,
+    "precision": 0.33
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/core/reshape/",
+   "label": "Reshaping",
+   "source": "learned",
+   "train": {
+    "hits": 4,
+    "support": 6,
+    "precision": 0.67
+   },
+   "check": {
+    "matches": 6,
+    "correct": 2,
+    "precision": 0.33
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/io/parsers/",
+   "label": "IO CSV",
+   "source": "learned",
+   "train": {
+    "hits": 4,
+    "support": 4,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 6,
+    "correct": 5,
+    "precision": 0.83
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "read_csv",
+   "label": "IO CSV",
+   "source": "learned",
+   "train": {
+    "hits": 24,
+    "support": 28,
+    "precision": 0.86
+   },
+   "check": {
+    "matches": 50,
+    "correct": 29,
+    "precision": 0.58
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "to_csv",
+   "label": "IO CSV",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 8,
+    "precision": 0.75
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "header",
+   "label": "IO CSV",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 9,
+    "precision": 0.67
+   },
+   "check": {
+    "matches": 16,
+    "correct": 8,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "path",
+   "match": "pandas/io/parquet.py",
+   "label": "IO Parquet",
+   "source": "learned",
+   "train": {
+    "hits": 4,
+    "support": 4,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 0,
+    "correct": 0,
+    "precision": null
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "read_parquet",
+   "label": "IO Parquet",
+   "source": "learned",
+   "train": {
+    "hits": 7,
+    "support": 10,
+    "precision": 0.7
+   },
+   "check": {
+    "matches": 4,
+    "correct": 3,
+    "precision": 0.75
+   }
+  }
+ ]
+}

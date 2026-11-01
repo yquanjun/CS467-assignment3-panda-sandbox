@@ -1,0 +1,630 @@
+[ 
+  {
+    "description": "",
+    "name": "Bug"
+  },
+  {
+    "description": "Library building on various platforms",
+    "name": "Build"
+  },
+  {
+    "description": "Datetime data dtype",
+    "name": "Datetime"
+  },
+  {
+    "description": "",
+    "name": "Docs"
+  },
+  {
+    "description": "",
+    "name": "Enhancement"
+  },
+  {
+    "description": "",
+    "name": "Groupby"
+  },
+  {
+    "description": "Related to indexing on series/frames, not to indexes themselves",
+    "name": "Indexing"
+  },
+  {
+    "description": "IO issues that don't fit into a more specific label",
+    "name": "IO Data"
+  },
+  {
+    "description": "np.nan, pd.NaT, pd.NA, dropna, isnull, interpolate",
+    "name": "Missing-data"
+  },
+  {
+    "description": "Internal refactoring of code",
+    "name": "Refactor"
+  },
+  {
+    "description": "pandas testing functions or related to the test suite",
+    "name": "Testing"
+  },
+  {
+    "description": "plotting",
+    "name": "Visualization"
+  },
+  {
+    "description": "Memory or execution speed performance",
+    "name": "Performance"
+  },
+  {
+    "description": "Concat, Merge/Join, Stack/Unstack, Explode",
+    "name": "Reshaping"
+  },
+  {
+    "description": "__repr__ of pandas objects, to_string",
+    "name": "Output-Formatting"
+  },
+  {
+    "description": "Unexpected or buggy dtype conversions",
+    "name": "Dtype Conversions"
+  },
+  {
+    "description": "Functionality that used to work in a prior pandas version",
+    "name": "Regression"
+  },
+  {
+    "description": "Administrative tasks related to the pandas project",
+    "name": "Admin"
+  },
+  {
+    "description": "Parallelism in pandas",
+    "name": "Multithreading"
+  },
+  {
+    "description": "",
+    "name": "Usage Question"
+  },
+  {
+    "description": "",
+    "name": "API Design"
+  },
+  {
+    "description": "Unicode strings",
+    "name": "Unicode"
+  },
+  {
+    "description": "Duplicate issue or pull request",
+    "name": "Duplicate Report"
+  },
+  {
+    "description": "Incorrect or improved errors from pandas",
+    "name": "Error Reporting"
+  },
+  {
+    "description": "Arithmetic, Comparison, and Logical operations",
+    "name": "Numeric Operations"
+  },
+  {
+    "description": "read_csv, to_csv",
+    "name": "IO CSV"
+  },
+  {
+    "description": "read_hdf, HDFStore",
+    "name": "IO HDF5"
+  },
+  {
+    "description": "to_sql, read_sql, read_sql_query",
+    "name": "IO SQL"
+  },
+  {
+    "description": "Continuous Integration",
+    "name": "CI"
+  },
+  {
+    "description": "Related to non-user accessible pandas implementation",
+    "name": "Internals"
+  },
+  {
+    "description": "Sparse Data Type",
+    "name": "Sparse"
+  },
+  {
+    "description": "read_excel, to_excel",
+    "name": "IO Excel"
+  },
+  {
+    "description": "read_json, to_json, json_normalize",
+    "name": "IO JSON"
+  },
+  {
+    "description": "Local or Cloud (AWS, GCS, etc.) IO Issues",
+    "name": "IO Network"
+  },
+  {
+    "description": "Timedelta data type",
+    "name": "Timedelta"
+  },
+  {
+    "description": "DateOffsets",
+    "name": "Frequency"
+  },
+  {
+    "description": "Windows OS",
+    "name": "Windows"
+  },
+  {
+    "description": "Non-arithmetic algos: value_counts, factorize, sorting, isin, clip, shift, diff",
+    "name": "Algos"
+  },
+  {
+    "description": "read_html, to_html, Styler.apply, Styler.applymap",
+    "name": "IO HTML"
+  },
+  {
+    "description": "String extension data type and string data",
+    "name": "Strings"
+  },
+  {
+    "description": "Timezone data dtype",
+    "name": "Timezones"
+  },
+  {
+    "description": "Period data type",
+    "name": "Period"
+  },
+  {
+    "description": "",
+    "name": "MultiIndex"
+  },
+  {
+    "description": "resample method",
+    "name": "Resample"
+  },
+  {
+    "description": "pandas objects compatability with Numpy or Python functions",
+    "name": "Compat"
+  },
+  {
+    "description": "Unit tests that occasionally fail",
+    "name": "Unreliable Test"
+  },
+  {
+    "description": "Blocking issue or pull request for an upcoming release",
+    "name": "Blocker"
+  },
+  {
+    "description": "Categorical Data Type",
+    "name": "Categorical"
+  },
+  {
+    "description": "Functionality to remove in pandas",
+    "name": "Deprecate"
+  },
+  {
+    "description": "read_stata, to_stata",
+    "name": "IO Stata"
+  },
+  {
+    "description": "Code style, linting, code_checks",
+    "name": "Code Style"
+  },
+  {
+    "description": "",
+    "name": "Release"
+  },
+  {
+    "description": "Interval data type",
+    "name": "Interval"
+  },
+  {
+    "description": "Complex Numbers",
+    "name": "Complex"
+  },
+  {
+    "description": "High level tracker for similar issues",
+    "name": "Master Tracker"
+  },
+  {
+    "description": "",
+    "name": "Clean"
+  },
+  {
+    "description": "Requires discussion from core team before further action",
+    "name": "Needs Discussion"
+  },
+  {
+    "description": "to_latex",
+    "name": "IO LaTeX"
+  },
+  {
+    "description": "SAS: read_sas",
+    "name": "IO SAS"
+  },
+  {
+    "description": "Clarification about behavior needed to assess issue",
+    "name": "Needs Info"
+  },
+  {
+    "description": "Required and optional dependencies",
+    "name": "Dependencies"
+  },
+  {
+    "description": "32-bit systems",
+    "name": "32bit"
+  },
+  {
+    "description": "parquet, feather",
+    "name": "IO Parquet"
+  },
+  {
+    "description": "Apply, Aggregate, Transform, Map",
+    "name": "Apply"
+  },
+  {
+    "description": "Performance (ASV) benchmarks",
+    "name": "Benchmark"
+  },
+  {
+    "description": "Extending pandas with custom dtypes or arrays.",
+    "name": "ExtensionArray"
+  },
+  {
+    "description": "Unit test(s) needed to prevent regressions",
+    "name": "Needs Tests"
+  },
+  {
+    "description": "rolling, ewma, expanding",
+    "name": "Window"
+  },
+  {
+    "description": "DataFrame data structure",
+    "name": "DataFrame"
+  },
+  {
+    "description": "Non-Recoverable Error",
+    "name": "Segfault"
+  },
+  {
+    "description": "Related to the Index class or subclasses",
+    "name": "Index"
+  },
+  {
+    "description": "Linux OS",
+    "name": "Linux"
+  },
+  {
+    "description": "type annotations, mypy/pyright type checking",
+    "name": "Typing"
+  },
+  {
+    "description": "Series data structure",
+    "name": "Series"
+  },
+  {
+    "description": "Series/DataFrame/Index/pd.array Constructors",
+    "name": "Constructors"
+  },
+  {
+    "description": "pandas website",
+    "name": "Web"
+  },
+  {
+    "description": "_metadata, .attrs",
+    "name": "metadata"
+  },
+  {
+    "description": "read_pickle, to_pickle",
+    "name": "IO Pickle"
+  },
+  {
+    "description": "Warnings that appear or should be added to pandas",
+    "name": "Warnings"
+  },
+  {
+    "description": "quantile method",
+    "name": "quantile"
+  },
+  {
+    "description": "pd.eval, query, pd.col",
+    "name": "expressions"
+  },
+  {
+    "description": "duplicated, drop_duplicates",
+    "name": "duplicated"
+  },
+  {
+    "description": "cut, qcut",
+    "name": "cut"
+  },
+  {
+    "description": "replace method",
+    "name": "replace"
+  },
+  {
+    "description": "A proposal for the roadmap.",
+    "name": "Roadmap"
+  },
+  {
+    "description": "hash_pandas_object",
+    "name": "hashing"
+  },
+  {
+    "description": "conditional formatting using DataFrame.style",
+    "name": "Styler"
+  },
+  {
+    "description": "read_fwf",
+    "name": "IO Fixed Width"
+  },
+  {
+    "description": "Internal Consistency of API/Behavior",
+    "name": "API - Consistency"
+  },
+  {
+    "description": "",
+    "name": "Still Needs Manual Backport"
+  },
+  {
+    "description": "Related to pd.NA and nullable extension arrays",
+    "name": "NA - MaskedArrays"
+  },
+  {
+    "description": "Issue that has not been reviewed by a pandas team member",
+    "name": "Needs Triage"
+  },
+  {
+    "description": "Temporarily-closed PR the author plans to return to",
+    "name": "Mothballed"
+  },
+  {
+    "description": "",
+    "name": "Copy / view semantics"
+  },
+  {
+    "description": "numba-accelerated operations",
+    "name": "numba"
+  },
+  {
+    "description": "Community topics (meetings, etc.)",
+    "name": "Community"
+  },
+  {
+    "description": "Data where the values are collections (lists, sets, dicts, objects, etc.).",
+    "name": "Nested Data"
+  },
+  {
+    "description": "",
+    "name": "Stale"
+  },
+  {
+    "description": "Issues caused by the presence of multiple Blocks",
+    "name": "Multi-Block"
+  },
+  {
+    "description": "sum, mean, min, max, etc.",
+    "name": "Reduction Operations"
+  },
+  {
+    "description": "May be closeable, needs more eyeballs",
+    "name": "Closing Candidate"
+  },
+  {
+    "description": "isin method",
+    "name": "isin"
+  },
+  {
+    "description": "Issue related to pandas dependency",
+    "name": "Upstream issue"
+  },
+  {
+    "description": "Subclassing pandas objects",
+    "name": "Subclassing"
+  },
+  {
+    "description": "aarch64 architecture",
+    "name": "ARM"
+  },
+  {
+    "description": "read_xml, to_xml",
+    "name": "IO XML"
+  },
+  {
+    "description": "stdlib datetime.date support",
+    "name": "datetime.date"
+  },
+  {
+    "description": "union, intersection, difference, symmetric_difference",
+    "name": "setops"
+  },
+  {
+    "description": "Related to Mac OS & hardware issues (M1)",
+    "name": "OS X"
+  },
+  {
+    "description": "pyarrow functionality",
+    "name": "Arrow"
+  },
+  {
+    "description": ".rename, .rename_axis",
+    "name": "rename"
+  },
+  {
+    "description": "Relating to inplace parameter or equivalent",
+    "name": "inplace"
+  },
+  {
+    "description": "",
+    "name": "Astype"
+  },
+  {
+    "description": "Blocking issue or pull request for release candidate",
+    "name": "Blocker for rc"
+  },
+  {
+    "description": "__array_ufunc__ and __array_function__",
+    "name": "ufuncs"
+  },
+  {
+    "description": "",
+    "name": "setitem-with-expansion"
+  },
+  {
+    "description": "datetime64/timedelta64 with non-nanosecond resolution",
+    "name": "Non-Nano"
+  },
+  {
+    "description": "pd.Timestamp and associated methods",
+    "name": "Timestamp"
+  },
+  {
+    "description": "pandas enhancement proposal",
+    "name": "PDEP"
+  },
+  {
+    "description": "Internationalization of data",
+    "name": "Localization"
+  },
+  {
+    "description": "Sprint Pull Requests",
+    "name": "Sprints"
+  },
+  {
+    "description": "",
+    "name": "cov/corr"
+  },
+  {
+    "description": "e.g. cumsum, diff, rank",
+    "name": "Transformations"
+  },
+  {
+    "description": "e.g. head, tail, nth",
+    "name": "Filters"
+  },
+  {
+    "description": "",
+    "name": "Python 3.12"
+  },
+  {
+    "description": "Used to track votes issues for PDEPs",
+    "name": "Vote"
+  },
+  {
+    "description": "accessor registration mechanism (not .str, .dt, .cat)",
+    "name": "Accessors"
+  },
+  {
+    "description": "op with pyarrow dtype -> expect pyarrow result",
+    "name": "pyarrow dtype retention"
+  },
+  {
+    "description": "User expects \"freq\" attribute to be preserved",
+    "name": "freq retention"
+  },
+  {
+    "description": "Issues that would be addressed by the Ice Cream Agreement from the Aug 2023 sprint",
+    "name": "PDEP missing values"
+  },
+  {
+    "description": "related to PDEP6 (not upcasting during setitem-like Series operations)",
+    "name": "PDEP6-related"
+  },
+  {
+    "description": "e.g. sort_index, sort_values",
+    "name": "Sorting"
+  },
+  {
+    "description": "E.g. where, mask, case_when",
+    "name": "Conditionals"
+  },
+  {
+    "description": "",
+    "name": "Python 3.13"
+  },
+  {
+    "description": "",
+    "name": "backported"
+  },
+  {
+    "description": "dtype for no-data cases",
+    "name": "Void Dtype"
+  },
+  {
+    "description": "Issues that would be addressed by moving to nullable-by-default",
+    "name": "Nullable by default"
+  },
+  {
+    "description": "",
+    "name": "Python 3.14"
+  },
+  {
+    "description": "",
+    "name": "BytesDtype"
+  },
+  {
+    "description": "Request for a new format to support.",
+    "name": "IO Format Request"
+  },
+  {
+    "description": "obj.describe, obj.info, requests for methods that look similar",
+    "name": "Describe/info/etc"
+  },
+  {
+    "description": "Suggestion to add a new method to the EA base class/interface.",
+    "name": "ExtensionArray - New Method Request"
+  },
+  {
+    "description": "NDFrame.combine, combine_first, update",
+    "name": "combine/combine_first/update"
+  },
+  {
+    "description": "e.g. level=1 could specify a level name or position",
+    "name": "Name/Position Ambiguity"
+  },
+  {
+    "description": "",
+    "name": "Non-Unique Columns/Rows"
+  },
+  {
+    "description": "Cases when an argument to a loc.__[sg]etitem__ is a frame/series and the alignment may be ambiguous",
+    "name": "Indexing alignment"
+  },
+  {
+    "description": "Stability and precision",
+    "name": "Numeric stability"
+  },
+  {
+    "description": "",
+    "name": "Free Threading"
+  },
+  {
+    "description": "pd.col API",
+    "name": "pd.col"
+  },
+  {
+    "description": "Request for something to be configurable by pd.set_option",
+    "name": "New Option Request"
+  },
+  {
+    "description": "",
+    "name": "Change Default Keyword/Option Request"
+  },
+  {
+    "description": "PR in the maintainers' court; exempt from staleness",
+    "name": "Awaiting Review"
+  },
+  {
+    "description": "PR whose author is not assigned to a linked issue",
+    "name": "Needs Issue Assignment"
+  },
+  {
+    "description": "",
+    "name": "Python 3.15"
+  },
+  {
+    "description": "Python scalars vs numpy scalars in results",
+    "name": "python_scalars"
+  },
+  {
+    "description": "",
+    "name": "Cross-Dtype Numerical Stability"
+  },
+  {
+    "description": "e.g. UserDict vs dict",
+    "name": "Obscure Inputs"
+  }
+]
