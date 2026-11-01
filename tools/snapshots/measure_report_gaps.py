@@ -34,24 +34,29 @@ def pct(part, whole):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--since", default="2025-12-01", help="created on or after (YYYY-MM-DD)")
-    parser.add_argument("--until", default="2026-10-15", help="created on or before (YYYY-MM-DD)")
+    parser.add_argument("--since", default="2025-01-01", help="created on or after (YYYY-MM-DD)")
+    parser.add_argument("--until", default="2026-10-31", help="created on or before (YYYY-MM-DD)")
     parser.add_argument("--list", type=int, default=20, help="examples to list (0 = none)")
     parser.add_argument("--gap", choices=GAP_NAMES,
                         help="list only reports with this gap, e.g. example_not_code")
     args = parser.parse_args()
 
     issues = json.loads(CORPUS.read_text(encoding="utf-8"))["issues"]
-    if issues and "report_gaps" not in issues[0]:
-        raise SystemExit("Corpus has no report_gaps field: rerun build_corpus.py first")
+    if issues and ("report_gaps" not in issues[0] or "form" not in issues[0]):
+        raise SystemExit("Corpus has no report_gaps/form fields: rerun build_corpus.py first")
 
     window = [i for i in issues if args.since <= i["created_at"][:10] <= args.until]
-    forms = [i for i in window if i["report_gaps"] is not None]   # bug/performance form reports
+    forms = [i for i in window if i["form"] == "bug"]              # bug-form reports (in scope)
     gapped = [i for i in forms if i["report_gaps"]]
 
-    print(f"Issues created {args.since} to {args.until}: {len(window)}")
-    print(f"  written with the bug or performance form: {len(forms)}")
-    print(f"  with at least one gap: {len(gapped)} ({pct(len(gapped), len(forms))} of form reports)\n")
+    # Scope evidence: which form each new issue used. 'no-form' issues are a mix of bug
+    # reports and other requests; the agent decides for those.
+    print(f"Issues created {args.since} to {args.until}: {len(window)}, by form:")
+    for kind, n in Counter(i["form"] for i in window).most_common():
+        print(f"  {n:5d}  {pct(n, len(window)):>4}  {kind}")
+
+    print(f"\nBug-form reports: {len(forms)}")
+    print(f"  with at least one gap: {len(gapped)} ({pct(len(gapped), len(forms))} of bug-form reports)\n")
 
     print("Gaps (an issue can have several):")
     counts = Counter(g for i in gapped for g in i["report_gaps"])

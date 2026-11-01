@@ -15,10 +15,10 @@ import time
 from datetime import date, timedelta
 from pathlib import Path
 
-from report_gaps import find_gaps   # report_gaps.py sits next to this script
+from report_gaps import find_gaps, form_type   # report_gaps.py sits next to this script
 
 REPO = "pandas-dev/pandas"
-START = date(2025, 5, 1)     # a few months before your earliest golden case
+START = date(2025, 1, 1)     # about 12 months before your earliest golden case
 END = date(2026, 10, 31)     # your latest golden case's date (or today)
 BODY_CHARS = 800             # keep only the start of each issue body
 FIELDS = "number,title,state,stateReason,labels,createdAt,closedAt,body"
@@ -97,7 +97,9 @@ def clean(issue):
         "closed_at": closed,
         "body_excerpt": strip_mentions(clean_body(body)[:BODY_CHARS]),
         "paths": traceback_paths(body),
-        # gaps in the bug/performance form, from the FULL body (None = not that form).
+        # which issue form was used ('bug', 'installation', ..., 'no-form'), from the full body
+        "form": form_type(body),
+        # gaps in a bug-form report, from the FULL body (None = not the bug form).
         # Current text: a report later edited to fill a gap no longer shows that gap.
         "report_gaps": find_gaps(body),
     }

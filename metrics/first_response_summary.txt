@@ -1,0 +1,20 @@
+﻿2026-08-01..2026-08-31: 21 outsider bug reports
+2026-09-01..2026-09-30: 22 outsider bug reports
+2026-10-01..2026-10-31: 53 outsider bug reports
+
+Bug reports by outsiders, created 2026-08-01 to 2026-10-31: 96 (left out 13 opened by maintainers)
+Collected 2026-11-01 10:52 UTC; wrote metrics\first_response.csv
+
+Time to first maintainer action:
+  with an action so far: 84 (88%); none yet: 12
+  median: 25.2 h; 90th percentile: 4.9 days
+  acted on within 1 day(s): 41 of 96 (43%)
+  acted on within 7 day(s): 74 of 90 (82%)
+
+Triage (Needs Triage removed):
+  still untriaged after 7 days: 26 of 90 (29%)
+  still untriaged after 30 days: 9 of 45 (20%)
+  reports with a template gap: 21, median wait 22.6 h
+  reports complete: 75, median wait 26.3 h
+
+Only issues at least 1, 7 or 30 days old count towards those limits; 'none yet' is as of the collection time.

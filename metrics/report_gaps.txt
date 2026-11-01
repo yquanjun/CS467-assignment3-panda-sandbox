@@ -1,0 +1,93 @@
+﻿Issues created 2025-01-01 to 2026-10-31: 1568, by form:
+    805   51%  bug
+    336   21%  no-form
+    189   12%  feature
+    170   11%  docs
+     38    2%  performance
+     18    1%  installation
+     11    1%  question
+      1    0%  pdep-vote
+
+Bug-form reports: 805
+  with at least one gap: 204 (25% of bug-form reports)
+
+Gaps (an issue can have several):
+     64    8%  show_versions() placeholder line left in
+    127   16%  Installed Versions filled, but not with show_versions() output
+      9    1%  Reproducible Example empty or filler
+     22    3%  Reproducible Example has no code
+      7    1%  Issue Description empty or filler
+     14    2%  Expected Behavior empty or filler
+
+What the reports with gaps look like now (labels as of the corpus build):
+     11    5%  labelled Needs Info
+     14    7%  labelled Closing Candidate
+      3    1%  closed as not planned
+    164   80%  closed as completed
+     35   17%  still labelled Needs Triage
+
+Caveats: labels are current, not historical (find_label_history.py covers removed labels);
+reports later edited to fill a gap are not counted, so these are lower bounds;
+a gap does not always mean a maintainer needed the information.
+
+=== Reports with gaps but no Needs Info label: 193, showing 20 ===
+2026-10-28  #71755  BUG: json_normalize max_level raises KeyError for nested integer mappi
+    gaps: no_show_versions | open | labels: Needs Triage
+    https://github.com/pandas-dev/pandas/issues/71755
+2026-10-25  #71603  BUG: DataFrame.to_string(max_cols=0) exceeds terminal width with uneve
+    gaps: versions_placeholder | open | labels: Bug, Needs Triage
+    https://github.com/pandas-dev/pandas/issues/71603
+2026-10-19  #71305  BUG: CSS border shorthand with a color like 'indigo' or 'aqua' loses c
+    gaps: no_show_versions | open | labels: Bug, Styler
+    https://github.com/pandas-dev/pandas/issues/71305
+2026-10-15  #71189  `pd.api.interchange.from_dataframe(pyarrow_table, allow_copy=False)` n
+    gaps: no_show_versions | closed (completed) | labels: Arrow, Bug
+    https://github.com/pandas-dev/pandas/issues/71189
+2026-10-15  #71188  BUG: `DataFrame().shift(freq='D')` on an empty DataFrame now raises No
+    gaps: no_show_versions | open | labels: Needs Triage
+    https://github.com/pandas-dev/pandas/issues/71188
+2026-10-12  #71109  BUG: gufunc reducing object Series to a non-scalar object raises Attri
+    gaps: no_show_versions | closed (completed) | labels: Bug, ExtensionArray, Index, ufuncs
+    https://github.com/pandas-dev/pandas/issues/71109
+2026-10-11  #71034  BUG: read_csv(engine="pyarrow") takes the column count from the first 
+    gaps: no_show_versions | open | labels: Arrow, Docs, Error Reporting, IO CSV, Upstream issue
+    https://github.com/pandas-dev/pandas/issues/71034
+2026-10-10  #70991  BUG: str.contains/match/fullmatch/count with \s on pyarrow-backed stri
+    gaps: no_show_versions | open | labels: Arrow, Bug, Strings
+    https://github.com/pandas-dev/pandas/issues/70991
+2026-10-09  #70884  PERF: Concatenating many MultiIndexes takes quadratic time since 2.1
+    gaps: no_show_versions | open | labels: MultiIndex, Performance, Reshaping
+    https://github.com/pandas-dev/pandas/issues/70884
+2026-10-01  #70082  BUG: website builder deletes source files when --target-path equals so
+    gaps: no_show_versions, example_not_code | closed (completed) | labels: Bug, CI
+    https://github.com/pandas-dev/pandas/issues/70082
+2026-09-30  #70005  BUG: DataFrame[tuple] returns a DataFrame instead of a Series for a un
+    gaps: no_show_versions | closed (completed) | labels: Duplicate Report, Indexing, MultiIndex
+    https://github.com/pandas-dev/pandas/issues/70005
+2026-09-25  #69467  BUG: `Day` offset stub base skips `SingleConstructorOffset`
+    gaps: no_show_versions | closed (completed) | labels: Typing
+    https://github.com/pandas-dev/pandas/issues/69467
+2026-09-24  #69443  BUG: loc assignment of a length-1 NumPy array into a PyArrow column ra
+    gaps: no_show_versions | open | labels: Arrow, Bug, Indexing
+    https://github.com/pandas-dev/pandas/issues/69443
+2026-09-22  #69412  BUG: DataFrame.select with duplicate columns
+    gaps: versions_placeholder | closed (completed) | labels: Bug, Indexing
+    https://github.com/pandas-dev/pandas/issues/69412
+2026-08-27  #67024  BUG: `Series.str.extract` with `ArrowDtype` raises on unnamed capture 
+    gaps: no_show_versions | closed (completed) | labels: Arrow, Bug, Strings
+    https://github.com/pandas-dev/pandas/issues/67024
+2026-08-26  #67010  BUG: read_csv with engine="pyarrow" and usecols orders columns as give
+    gaps: versions_placeholder | open | labels: Arrow, Bug, IO CSV
+    https://github.com/pandas-dev/pandas/issues/67010
+2026-08-26  #67008  BUG: read_csv with engine="pyarrow", header=None and usecols relabels 
+    gaps: versions_placeholder | open | labels: Bug, IO CSV
+    https://github.com/pandas-dev/pandas/issues/67008
+2026-08-10  #66709  BUG: to_json(date_format="epoch") ignores date_unit for datetime-likes
+    gaps: no_show_versions | closed (completed) | labels: Bug, IO JSON
+    https://github.com/pandas-dev/pandas/issues/66709
+2026-08-10  #66703  BUG: boolean-mask operations on a null-dtype ArrowDtype column abort t
+    gaps: no_show_versions | closed (completed) | labels: Arrow, Bug, Segfault
+    https://github.com/pandas-dev/pandas/issues/66703
+2026-08-10  #66699  BUG: assert_series_equal ignores atol/rtol when comparing integer and 
+    gaps: no_show_versions | closed (completed) | labels: -
+    https://github.com/pandas-dev/pandas/issues/66699
