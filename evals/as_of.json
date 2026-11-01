@@ -11,7 +11,7 @@
   },
   "BUG: read_xml iterparse with repeated names loses values on large files": {
    "as_of": "2026-10-17T19:20:41Z",
-   "case": "03_missing_checkbox_71275"
+   "case": "03_optional_box_unticked_71275"
   },
   "BUG: The order of items in `pd.concat` matters for the resulting `.index.freq`.": {
    "as_of": "2026-02-20T11:45:45Z",

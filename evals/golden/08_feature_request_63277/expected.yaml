@@ -1,6 +1,6 @@
 case: 08_feature_request_63277
 category: feature request filed as a bug
-what_it_tests: telling a feature request from a bug (checklist step 5)
+what_it_tests: telling a feature request from a bug (maintainer's checklist step 5)
 evidence: maintainers debated the API and suggested holding off; nobody treated it as a bug
 agent_job: run
 expected:

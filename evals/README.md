@@ -10,12 +10,15 @@ evals/
   fetch_cases.py        fetches the original title/body of each real case (read-only, uses your gh login)
   as_of.json            original title -> original creation date (written by fetch_cases.py)
   golden/<case>/
-    expected.yaml       what the workflow should do (written by hand, before any run)
+    expected.yaml       what the workflow should do
     title.txt           title to paste into the issue form
     input.md            body to paste (original revision; @mentions and pandas links neutralised)
     source.md           reviewer evidence: dates, labels, maintainer responses
     revisions.md        every saved revision of the body, raw (real cases only)
-    result.md           what actually happened (added after the run: run URL, comment, labels)
+    actual/             what actually happened (added after the run):
+      issue.json        final comment(s) and labels: gh issue view <n> --json title,labels,comments
+      audit.json        run record (prompt, tool calls, model, credits): gh aw audit <run-id> --json
+      result.md         run URL, sandbox issue number, pass/fail per expected.yaml field, notes
 ```
 
 ## expected.yaml fields
@@ -43,7 +46,7 @@ more than 1 comment, any write to another issue.
    (the `review:` lines first).
 3. Commit. Expectations are now fixed; changing one later means a new commit with a reason.
 4. File each case from the reporter account (bug form; the exact `title.txt`; 11 as a blank issue).
-5. Record the run URL and outcome in `result.md`; summarise in DESIGN.md "Tests revealed".
+5. Save `actual/issue.json`, `actual/audit.json` and `actual/result.md`; summarise in DESIGN.md "Tests revealed".
 
 Folder names contain upstream numbers for traceability. Never put them, or any pandas link,
 in the text you file.

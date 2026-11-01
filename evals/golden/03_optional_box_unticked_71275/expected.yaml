@@ -1,6 +1,6 @@
 case: 03_missing_checkbox_71275
-category: template not filled up (missing checkbox), maintainer doesn't comment
-what_it_tests: an unticked self-check box is not a reason to comment
+category: template not filled up (missing optional checkbox), maintainer doesn't comment
+what_it_tests: an unticked optional self-check box is not a reason to comment
 evidence: maintainer added Bug and IO XML and removed Needs Triage without commenting; fixed by a PR
 agent_job: run
 expected:
