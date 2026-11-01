@@ -8,5 +8,5 @@ expected:
   comment_must_mention: [isna]
   comment_must_not: ["@", "/take"]
   labels_any_of: []
-  labels_allowed: [API Design]
+  labels_allowed: []
   labels_none_of: [Closing Candidate]
