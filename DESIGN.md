@@ -17,6 +17,18 @@ Deterministic approach was also used but was not enough to handle features like 
 **How it runs:**
 **Where each rule lives:**
 
+**Coverage of the pandas triage checklist** (steps from the [pandas maintainer guide](https://pandas.pydata.org/docs/development/maintaining.html#issue-triage)):
+
+| Step | Checks job (scripts) | Agent | Left to maintainers | Cases |
+|---|---|---|---|---|
+| 1. Thank the reporter | - | - | Yes | - |
+| 2. Necessary information? | `report_gaps.py`, `version_gap.py` | Does a gap block reproduction? Ask by comment | Needs Info label | 04, 06 |
+| 3. Duplicate? | `find_candidates.py` | Same problem? Name it in the comment | Duplicate Report, closing | 10 |
+| 4. Minimal and reproducible? | `check_example.py` (pyflakes) | Can the example run? Ask for what is missing | Running the code | 05 |
+| 5. Feature request? | - | Recognise it; add Needs Discussion | Scope decision | 08 |
+| 6. Usage question? | - | Recognise it; point to the right usage | Closing | 07 |
+| 7. Labels and milestones | `area_hints.py`, `validate_labels.py` | Pick at most 2 allowlisted labels | Removing Needs Triage, milestones | 01-03 |
+
 ## 3. Governance
 **Untrusted inputs:**
 **Actions the agent can perform:**

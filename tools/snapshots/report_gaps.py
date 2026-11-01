@@ -9,6 +9,7 @@ checks job on a new issue and in build_corpus.py on old ones.
     scope(body)       # 'in' (bug form), 'out' (any other form), 'unknown' (no form:
                       # the agent decides whether it is a bug report)
     find_gaps(body)   # [] (complete), ['versions_placeholder', ...], or None (not a bug form)
+    bug_sections(body)  # bug-form sections; '###' lines typed inside a box stay in that box
 
 Gap names:
   versions_placeholder  'Replace this line with the output of pd.show_versions()' left in
@@ -51,6 +52,26 @@ def sections(body):
     return {parts[i].strip(): parts[i + 1].strip() for i in range(1, len(parts) - 1, 2)}
 
 
+BUG_SECTIONS = ["Pandas version checks", "Reproducible Example", "Issue Description",
+                "Expected Behavior", "Installed Versions"]
+
+
+def bug_sections(body):
+    """Like sections(), for the bug form. Reporters sometimes paste text with its own '###'
+    headings into a box (e.g. a matplotlib bug report inside Reproducible Example); such a
+    heading is not a form section, so it stays part of the box it was typed in."""
+    parts = SECTION.split(body or "")
+    found, current = {}, None
+    for i in range(1, len(parts) - 1, 2):
+        name, text = parts[i].strip(), parts[i + 1]
+        if name in BUG_SECTIONS and name not in found:
+            current = name
+            found[name] = text
+        elif current:
+            found[current] += f"### {name}\n{text}"
+    return {name: text.strip() for name, text in found.items()}
+
+
 def form_type(body):
     """Which issue form produced this body, judged by its section headings."""
     found = sections(body or "")
@@ -78,7 +99,7 @@ def find_gaps(body):
     """List the gaps in a bug-form report; None if the body is not a bug-form report."""
     if form_type(body) != "bug":
         return None
-    found = sections(body)
+    found = bug_sections(body)
 
     gaps = []
     versions = found.get("Installed Versions")
