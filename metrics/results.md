@@ -70,7 +70,7 @@ https://github.com/pandas-dev/pandas/issues?q=is%3Aissue+%22This+issue+is+still+
 ## Summary for DESIGN.md
 
 - Bug reports were 805 of 1568 new issues (51%).
-- Median wait for a first maintainer action: 25.2 h (4.9 days).
+- Median wait for a first maintainer action: 25.2 h (90th percentile: 4.9 days).
 - 25% of bug reports had a gap in the template
 - 27 bug issues had a `/take` refusal because of the triage being undone.
 
