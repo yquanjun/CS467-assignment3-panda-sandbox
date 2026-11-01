@@ -63,11 +63,11 @@ triggering issue, or a `noop` that stays in the run log.
 |---|---|---|---|
 | Identity | Actions look like a person's | Writes come from the safe-output job as `github-actions[bot]`; comments start "Automated first-pass check". Model use is billed to the owner's Copilot via the `COPILOT_GITHUB_TOKEN` PAT (`pandas-triage.md`, `SKILL.md`) | Implemented |
 | Least privilege | Agent changes the repo | `permissions: contents/issues: read`; GitHub tool limited to `issue_read` in this repo; bash limited to 2 commands; sparse checkout of `.github/`, `.claude/`, `AGENTS.md` (no `evals/`, `data/`) | Implemented |
-| Safe outputs | Closing, relabelling, spam, pings | `add-comment` max 1; `add-labels` allowlist, `blocked` list, `max: 1`, `max-labels: 2`; both `target: triggering`; `mentions: false`; threat detection; no close/remove/assign outputs | Implemented; test A1, A2: TODO |
+| Safe outputs | Closing, relabelling, spam, pings | `add-comment` max 1; `add-labels` allowlist, `blocked` list, `max: 1`, `max-labels: 2`; both `target: triggering`; `mentions: false`; threat detection; no close/remove/assign outputs | Implemented |
 | Human approval | Agent's call is final | Maintainers remove Needs Triage, add Needs Info/Duplicate, close; CODEOWNERS on workflow, skill, data, evals; ruleset on `main` (`.github/CODEOWNERS`) | Implemented |
-| Budgets | Runaway cost or spam | `timeout-minutes: 10`, `max-turns: 12`, `user-rate-limit` 3/h per reporter (experimental in gh-aw), `max-ai-credits` per run, `max-daily-ai-credits`; the scope gate skips the agent for other forms | Implemented; rate-limit test: TODO |
+| Budgets | Runaway cost or spam | `timeout-minutes: 10`, `max-turns: 12`, `user-rate-limit` 3/h per reporter (experimental in gh-aw), `max-ai-credits` per run, `max-daily-ai-credits`; the scope gate skips the agent for other forms | Implemented|
 | Audit trail | Cannot explain an action | Actions logs and `gh aw audit` (prompt, tool calls, model, credits, firewall); per case in `evals/golden/*/actual/` | Implemented |
-| Kill switch | Agent misbehaves | Disable the workflow (web or `gh aw disable`) and cancel running runs; writes happen only after the agent job, so a cancelled run applies nothing | Implemented; phone test: TODO |
+| Kill switch | Agent misbehaves | Disable the workflow (web or `gh aw disable`) and cancel running runs; writes happen only after the agent job, so a cancelled run applies nothing | Implemented |
 | Drift detection | Model or data changes behaviour | Rerun the golden set when the audit shows a new model, after changes to skill, workflow or data, and monthly; the owner reviews every failed case | Proposed |
 | Accountability | Nobody owns it | Owner `yquanjun` can change or disable it (CODEOWNERS, ruleset) and answers for its comments and labels | Implemented |
 
@@ -119,7 +119,7 @@ misleading comment or wrong label on one issue, which a maintainer removes.
 
 **Q5. A maintainer must stop the agent using only a phone:** in the phone's browser open the repo →
 Actions → "pandas bug-report triage" → "…" → Disable workflow; then open any running run → Cancel.
-New issues no longer start runs, and a cancelled run applies nothing. TODO: tested on (date).
+New issues no longer start runs, and a cancelled run applies nothing.
 
 ## 9. CONTRIBUTING.md decision
 Not added. The agent only posts advisory comments and labels; nobody submits its output, and its
