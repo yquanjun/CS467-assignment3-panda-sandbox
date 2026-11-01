@@ -8,7 +8,7 @@ then checked on later issues, so every rule comes with evidence you can report.
      (at the commit pinned in UPSTREAM.md), plus accessors such as .str and .dt.
   2. Signals in an issue: pandas names in its title or body, and pandas file paths from
      tracebacks (with their parent folders).
-  3. Training issues: corpus issues created BEFORE your earliest test case that a
+  3. Training issues: bug reports in the corpus created BEFORE your earliest test case that a
      maintainer has triaged ("Needs Triage" removed). Test cases are always left out.
   4. A signal becomes a rule for a label when at least MIN_HITS training issues with the
      signal had the label, and at least MIN_PRECISION of all training issues with it did.
@@ -55,6 +55,10 @@ MANUAL_RULES = []         # rules you add by hand; they are checked and reported
 # e.g. [{"kind": "keyword", "match": "read_stata", "label": "IO Stata"}]
 
 NOT_TRIAGED = "Needs Triage"
+# The agent only handles bug reports, so rules are learned and checked on the same kind of
+# issue: bug-form reports and issues filed without a form (corpora without a 'form' field
+# are used whole).
+IN_SCOPE_FORMS = {"bug", "no-form"}
 ACCESSORS = {"str", "dt", "cat", "sparse", "plot", "style", "list", "struct"}
 
 # How a rule matches an issue. Saved into structure.json so the script that gives the
@@ -318,7 +322,7 @@ def list_labels(issues):
 
 
 def report(rules, summary, near_misses, train_n, check_n, cutoff):
-    print(f"\nLearned from {train_n} triaged issues created before {cutoff[:10]}; "
+    print(f"\nLearned from {train_n} triaged bug reports created before {cutoff[:10]}; "
           f"checked on {check_n} created on or after it.\n")
     for label in AREA_LABELS:
         s = summary[label]
@@ -370,8 +374,12 @@ def main():
               "paths come from full issue bodies, not only the excerpt")
     cutoff = min(by_number[n]["created_at"] for n in TEST_CASE_ISSUES if n in by_number)
 
+    if issues and "form" not in issues[0]:
+        print("Note: corpus has no 'form' field; rerun build_corpus.py so rules are "
+              "learned from bug reports only")
     pool = [i for i in issues if i["number"] not in TEST_CASE_ISSUES
-            and NOT_TRIAGED not in i["labels"]]
+            and NOT_TRIAGED not in i["labels"]
+            and i.get("form", "bug") in IN_SCOPE_FORMS]
     train = [i for i in pool if i["created_at"] < cutoff]
     later = [i for i in pool if i["created_at"] >= cutoff]
     if len(train) < 300:
@@ -393,8 +401,8 @@ def main():
         "cutoff": cutoff,
         "test_cases_left_out": sorted(TEST_CASE_ISSUES),
         "method": {
-            "learned_from": f"{len(train)} triaged corpus issues created before the cutoff",
-            "checked_on": f"{len(later)} triaged corpus issues created on or after the cutoff",
+            "learned_from": f"{len(train)} triaged bug reports created before the cutoff",
+            "checked_on": f"{len(later)} triaged bug reports created on or after the cutoff",
             "min_hits_keyword": MIN_HITS_KEYWORD, "min_hits_path": MIN_HITS_PATH,
             "min_precision": MIN_PRECISION, "max_rules_per_label": MAX_RULES_PER_LABEL,
             "ignored_keywords": sorted(IGNORE_KEYWORDS),

@@ -19,8 +19,8 @@
   71275
  ],
  "method": {
-  "learned_from": "684 triaged corpus issues created before the cutoff",
-  "checked_on": "631 triaged corpus issues created on or after the cutoff",
+  "learned_from": "526 triaged bug reports created before the cutoff",
+  "checked_on": "490 triaged bug reports created on or after the cutoff",
   "min_hits_keyword": 5,
   "min_hits_path": 3,
   "min_precision": 0.6,
@@ -50,14 +50,14 @@
  ],
  "labels": {
   "Strings": {
-   "check_issues": 48,
+   "check_issues": 45,
    "found_by_rules": 13,
-   "recall": 0.27
+   "recall": 0.29
   },
   "Arrow": {
-   "check_issues": 65,
+   "check_issues": 62,
    "found_by_rules": 23,
-   "recall": 0.35
+   "recall": 0.37
   },
   "IO XML": {
    "check_issues": 2,
@@ -65,22 +65,22 @@
    "recall": 0.0
   },
   "Reshaping": {
-   "check_issues": 17,
-   "found_by_rules": 8,
-   "recall": 0.47
+   "check_issues": 12,
+   "found_by_rules": 7,
+   "recall": 0.58
   },
   "Visualization": {
-   "check_issues": 8,
+   "check_issues": 7,
    "found_by_rules": 5,
-   "recall": 0.62
+   "recall": 0.71
   },
   "IO CSV": {
-   "check_issues": 33,
-   "found_by_rules": 31,
-   "recall": 0.94
+   "check_issues": 30,
+   "found_by_rules": 29,
+   "recall": 0.97
   },
   "expressions": {
-   "check_issues": 16,
+   "check_issues": 10,
    "found_by_rules": 0,
    "recall": 0.0
   },
@@ -91,6 +91,22 @@
   }
  },
  "rules": [
+  {
+   "kind": "path",
+   "match": "pandas/core/strings/",
+   "label": "Strings",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 6,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 3,
+    "correct": 2,
+    "precision": 0.67
+   }
+  },
   {
    "kind": "path",
    "match": "pandas/core/arrays/_arrow_string_mixins.py",
@@ -105,22 +121,6 @@
     "matches": 1,
     "correct": 1,
     "precision": 1.0
-   }
-  },
-  {
-   "kind": "path",
-   "match": "pandas/core/strings/",
-   "label": "Strings",
-   "source": "learned",
-   "train": {
-    "hits": 6,
-    "support": 7,
-    "precision": 0.86
-   },
-   "check": {
-    "matches": 3,
-    "correct": 2,
-    "precision": 0.67
    }
   },
   {
@@ -146,13 +146,29 @@
    "source": "learned",
    "train": {
     "hits": 9,
-    "support": 14,
-    "precision": 0.64
+    "support": 13,
+    "precision": 0.69
    },
    "check": {
-    "matches": 13,
+    "matches": 12,
     "correct": 10,
-    "precision": 0.77
+    "precision": 0.83
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "wrapper",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 5,
+    "support": 5,
+    "precision": 1.0
+   },
+   "check": {
+    "matches": 3,
+    "correct": 1,
+    "precision": 0.33
    }
   },
   {
@@ -172,62 +188,14 @@
    }
   },
   {
-   "kind": "keyword",
-   "match": "wrapper",
-   "label": "Arrow",
-   "source": "learned",
-   "train": {
-    "hits": 5,
-    "support": 6,
-    "precision": 0.83
-   },
-   "check": {
-    "matches": 4,
-    "correct": 1,
-    "precision": 0.25
-   }
-  },
-  {
-   "kind": "keyword",
-   "match": "ArrowDtype",
-   "label": "Arrow",
-   "source": "learned",
-   "train": {
-    "hits": 14,
-    "support": 18,
-    "precision": 0.78
-   },
-   "check": {
-    "matches": 13,
-    "correct": 10,
-    "precision": 0.77
-   }
-  },
-  {
-   "kind": "keyword",
-   "match": "convert_dtypes",
-   "label": "Arrow",
-   "source": "learned",
-   "train": {
-    "hits": 8,
-    "support": 11,
-    "precision": 0.73
-   },
-   "check": {
-    "matches": 12,
-    "correct": 6,
-    "precision": 0.5
-   }
-  },
-  {
    "kind": "path",
    "match": "pandas/core/strings/",
    "label": "Arrow",
    "source": "learned",
    "train": {
     "hits": 5,
-    "support": 7,
-    "precision": 0.71
+    "support": 6,
+    "precision": 0.83
    },
    "check": {
     "matches": 3,
@@ -237,13 +205,45 @@
   },
   {
    "kind": "keyword",
+   "match": "convert_dtypes",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 8,
+    "support": 10,
+    "precision": 0.8
+   },
+   "check": {
+    "matches": 12,
+    "correct": 6,
+    "precision": 0.5
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "ArrowDtype",
+   "label": "Arrow",
+   "source": "learned",
+   "train": {
+    "hits": 13,
+    "support": 17,
+    "precision": 0.76
+   },
+   "check": {
+    "matches": 11,
+    "correct": 10,
+    "precision": 0.91
+   }
+  },
+  {
+   "kind": "keyword",
    "match": "dtype_backend",
    "label": "Arrow",
    "source": "learned",
    "train": {
     "hits": 9,
-    "support": 14,
-    "precision": 0.64
+    "support": 13,
+    "precision": 0.69
    },
    "check": {
     "matches": 17,
@@ -252,14 +252,30 @@
    }
   },
   {
+   "kind": "path",
+   "match": "pandas/core/reshape/",
+   "label": "Reshaping",
+   "source": "learned",
+   "train": {
+    "hits": 6,
+    "support": 7,
+    "precision": 0.86
+   },
+   "check": {
+    "matches": 4,
+    "correct": 2,
+    "precision": 0.5
+   }
+  },
+  {
    "kind": "keyword",
    "match": "unstack",
    "label": "Reshaping",
    "source": "learned",
    "train": {
-    "hits": 6,
-    "support": 8,
-    "precision": 0.75
+    "hits": 5,
+    "support": 6,
+    "precision": 0.83
    },
    "check": {
     "matches": 4,
@@ -273,25 +289,9 @@
    "label": "Reshaping",
    "source": "learned",
    "train": {
-    "hits": 8,
-    "support": 11,
-    "precision": 0.73
-   },
-   "check": {
-    "matches": 9,
-    "correct": 3,
-    "precision": 0.33
-   }
-  },
-  {
-   "kind": "path",
-   "match": "pandas/core/reshape/",
-   "label": "Reshaping",
-   "source": "learned",
-   "train": {
-    "hits": 6,
-    "support": 9,
-    "precision": 0.67
+    "hits": 7,
+    "support": 10,
+    "precision": 0.7
    },
    "check": {
     "matches": 6,
@@ -305,8 +305,8 @@
    "label": "Visualization",
    "source": "learned",
    "train": {
-    "hits": 10,
-    "support": 10,
+    "hits": 9,
+    "support": 9,
     "precision": 1.0
    },
    "check": {
@@ -321,8 +321,8 @@
    "label": "IO CSV",
    "source": "learned",
    "train": {
-    "hits": 6,
-    "support": 6,
+    "hits": 5,
+    "support": 5,
     "precision": 1.0
    },
    "check": {
@@ -337,30 +337,14 @@
    "label": "IO CSV",
    "source": "learned",
    "train": {
-    "hits": 30,
-    "support": 36,
-    "precision": 0.83
+    "hits": 26,
+    "support": 31,
+    "precision": 0.84
    },
    "check": {
-    "matches": 50,
-    "correct": 29,
-    "precision": 0.58
-   }
-  },
-  {
-   "kind": "keyword",
-   "match": "to_csv",
-   "label": "IO CSV",
-   "source": "learned",
-   "train": {
-    "hits": 8,
-    "support": 12,
-    "precision": 0.67
-   },
-   "check": {
-    "matches": 1,
-    "correct": 1,
-    "precision": 1.0
+    "matches": 44,
+    "correct": 27,
+    "precision": 0.61
    }
   },
   {
@@ -369,14 +353,30 @@
    "label": "IO CSV",
    "source": "learned",
    "train": {
-    "hits": 9,
-    "support": 14,
-    "precision": 0.64
+    "hits": 7,
+    "support": 9,
+    "precision": 0.78
    },
    "check": {
-    "matches": 16,
+    "matches": 15,
     "correct": 8,
-    "precision": 0.5
+    "precision": 0.53
+   }
+  },
+  {
+   "kind": "keyword",
+   "match": "to_csv",
+   "label": "IO CSV",
+   "source": "learned",
+   "train": {
+    "hits": 7,
+    "support": 10,
+    "precision": 0.7
+   },
+   "check": {
+    "matches": 1,
+    "correct": 1,
+    "precision": 1.0
    }
   },
   {
@@ -385,8 +385,8 @@
    "label": "IO Parquet",
    "source": "learned",
    "train": {
-    "hits": 4,
-    "support": 4,
+    "hits": 3,
+    "support": 3,
     "precision": 1.0
    },
    "check": {
@@ -401,9 +401,9 @@
    "label": "IO Parquet",
    "source": "learned",
    "train": {
-    "hits": 9,
-    "support": 13,
-    "precision": 0.69
+    "hits": 7,
+    "support": 10,
+    "precision": 0.7
    },
    "check": {
     "matches": 4,
