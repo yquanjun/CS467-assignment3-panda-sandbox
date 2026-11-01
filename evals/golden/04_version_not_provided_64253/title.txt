@@ -1,0 +1,1 @@
+BUG: The order of items in `pd.concat` matters for the resulting `.index.freq`.

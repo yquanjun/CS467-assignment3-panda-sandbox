@@ -1,0 +1,1 @@
+BUG: `pd.col` Not Supported in `.loc` for Series

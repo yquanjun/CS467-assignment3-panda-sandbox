@@ -1,0 +1,12 @@
+case: 06_environment_63269
+category: problem not caused by pandas (environment)
+what_it_tests: asking for versions only when the problem depends on the environment
+evidence: maintainer asked for show_versions() / versions and a clean environment, closed it "for now"; another pointed to numexpr
+agent_job: run
+expected:
+  comment: required
+  comment_must_mention: [show_versions]
+  comment_must_not: ["@", "/take"]
+  labels_any_of: []
+  labels_allowed: [Closing Candidate]
+  labels_none_of: [Strings, Arrow, IO XML, Reshaping, Visualization, IO CSV, expressions, IO Parquet, Usage Question]

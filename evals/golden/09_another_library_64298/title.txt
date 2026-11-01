@@ -1,0 +1,1 @@
+BUG: pandas discarding index when loading from parquet

@@ -1,0 +1,1 @@
+BUG: read_csv drops the last row when the file has no trailing newline

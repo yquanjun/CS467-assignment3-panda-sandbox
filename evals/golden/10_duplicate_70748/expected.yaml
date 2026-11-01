@@ -1,0 +1,13 @@
+case: 10_duplicate_70748
+category: duplicate issue
+what_it_tests: find_candidates.py surfaces the original; the agent judges it is the same problem
+evidence: maintainer closed it as a duplicate of pandas issue 61707 and added Duplicate Report
+agent_job: run
+expected:
+  comment: required
+  comment_must_mention: ["61707"]
+  comment_must_not: ["@", "/take"]
+  labels_any_of: []
+  labels_allowed: [Closing Candidate]
+  labels_none_of: [Duplicate Report]
+deterministic_check: find_candidates.py must return 61707 and never 70748 itself

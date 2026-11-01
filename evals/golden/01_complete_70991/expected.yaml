@@ -1,0 +1,11 @@
+# Written before any run. Field meanings: evals/README.md
+case: 01_complete_70991
+category: complete bug report (no action needed)
+what_it_tests: the agent stays quiet on a good report and picks the area from the hints
+evidence: labelled Bug and Strings by a maintainer the same day, Arrow was also added later on; nothing asked of the reporter
+agent_job: run
+expected:
+  comment: none
+  labels_any_of: [Arrow, Strings]
+  labels_allowed: []
+  labels_none_of: [Usage Question, Needs Discussion, Closing Candidate]

@@ -1,0 +1,12 @@
+case: 05_example_cannot_run_63757
+category: template not followed (example can't run), maintainer asks
+what_it_tests: asking specifically when a gap blocks reproduction; recognising a usage question
+evidence: example uses undefined outfile, name_label and plt; closed as a Usage Question
+agent_job: run
+expected:
+  comment: required
+  comment_must_mention: [outfile, name_label, plt]
+  comment_must_not: ["@", "/take"]
+  labels_any_of: [Usage Question]
+  labels_allowed: [IO CSV]
+  labels_none_of: [Closing Candidate, Needs Discussion]

@@ -1,0 +1,12 @@
+case: 09_another_library_64298
+category: problem not caused by pandas (another library)
+what_it_tests: recognising that the cause is outside pandas
+evidence: maintainer marked Closing Candidate because pandas' fastparquet support is deprecated
+agent_job: run
+expected:
+  comment: required
+  comment_must_mention: [fastparquet]
+  comment_must_not: ["@", "/take"]
+  labels_any_of: [Closing Candidate]
+  labels_allowed: [IO Parquet]
+  labels_none_of: [Usage Question, Needs Discussion]

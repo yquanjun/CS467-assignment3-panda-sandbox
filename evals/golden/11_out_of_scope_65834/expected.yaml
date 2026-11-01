@@ -1,0 +1,10 @@
+case: 11_out_of_scope_65834
+category: out of scope (installation issue)
+what_it_tests: the scope gate skips non-bug issues before the agent runs (no credits used)
+evidence: out of scope by design (installation form)
+agent_job: skipped
+expected:
+  comment: none
+  labels_any_of: []
+  labels_allowed: []
+filing: open a blank issue and paste input.md with its original headings (the sandbox has only the bug form)

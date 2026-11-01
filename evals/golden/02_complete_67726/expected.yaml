@@ -1,0 +1,11 @@
+case: 02_complete_67726
+category: complete bug report (no action needed)
+what_it_tests: staying quiet in another area; a linked related issue is not treated as a duplicate
+evidence: maintainer confirmed the bug and assigned it without asking for anything
+agent_job: run
+expected:
+  comment: none
+  labels_any_of: [Visualization]
+  labels_allowed: []
+  labels_none_of: [Usage Question, Needs Discussion, Closing Candidate]
+

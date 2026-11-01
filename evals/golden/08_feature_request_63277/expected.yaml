@@ -1,0 +1,12 @@
+case: 08_feature_request_63277
+category: feature request filed as a bug
+what_it_tests: telling a feature request from a bug (checklist step 5)
+evidence: maintainers debated the API and suggested holding off; nobody treated it as a bug
+agent_job: run
+expected:
+  comment: optional
+  comment_must_not: ["@", "/take"]
+  labels_any_of: [Needs Discussion]
+  labels_allowed: [expressions]
+  labels_none_of: [Usage Question, Closing Candidate]
+review: check the original title in source.md; if it already said ENH, note that the title gave it away

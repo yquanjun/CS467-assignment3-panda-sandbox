@@ -8,7 +8,7 @@ test cases
 {70991, 67726, 71275, 64253, 63757, 63269, 63271, 63277, 64298, 70748, 65834}
 1. Complete bug report (no action needed) https://github.com/pandas-dev/pandas/issues/70991
 2. Complete bug report (no action needed) https://github.com/pandas-dev/pandas/issues/67726
-3. Template not filled up (missing checkbox), maintainer doesn't comment https://github.com/pandas-dev/pandas/issues/71275
+3. Template not filled up (missing optional checkbox), maintainer doesn't comment https://github.com/pandas-dev/pandas/issues/71275
 4. Template not followed: version not provided, maintainer doesn't ask https://github.com/pandas-dev/pandas/issues/64253
 5. Template not followed: example can't run, maintainer asks https://github.com/pandas-dev/pandas/issues/63757
 6. Problem not caused by pandas (environment) https://github.com/pandas-dev/pandas/issues/63269

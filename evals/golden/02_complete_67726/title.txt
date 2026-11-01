@@ -1,0 +1,1 @@
+BUG: IndexError with certain subplot order in stacked barchart

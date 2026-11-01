@@ -1,0 +1,1 @@
+BUG: describe() raises for numeric ExtensionArrays whose scalars can't be cast to float (e.g. pint-pandas)

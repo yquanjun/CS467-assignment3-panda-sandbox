@@ -1,0 +1,1 @@
+BUG: str.contains/match/fullmatch/count with \s on pyarrow-backed strings miss \v and \x1c-\x1f

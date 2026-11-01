@@ -1,0 +1,10 @@
+case: 04_version_not_provided_64253
+category: template not followed (version not provided), maintainer doesn't ask
+what_it_tests: a versions placeholder and a trivial missing import are not reasons to comment
+evidence: placeholder left in, version stated in the text; nobody asked for show_versions()
+agent_job: run
+expected:
+  comment: none
+  labels_any_of: [Reshaping]
+  labels_allowed: []
+  labels_none_of: [Usage Question, Needs Discussion, Closing Candidate]
